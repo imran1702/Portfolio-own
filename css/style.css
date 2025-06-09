@@ -1,0 +1,191 @@
+/* common css start */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none !important;
+}
+body{
+    background: #212428 !important;
+    color: #C4CFDE !important;
+    font-family: "Rubik", sans-serif;
+}
+section{
+    margin: 25px 0;
+}
+.container{
+    border-bottom: #000000 0.7px solid ;
+    padding-bottom: 40px;
+}
+/* common css end */
+/* navBar css start */
+#navBAr{
+    background: #212428 !important;
+    color: #C4CFDE !important;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px;
+}
+#navBAr a{
+    font-family: "Rubik", sans-serif;
+    color: #C4CFDE;
+}
+#navBAr ul li a{
+    color: #C4CFDE;
+    margin-left: 15px;
+    text-transform: uppercase; 
+}
+#navBAr ul li a:hover{
+    color: #FF014F;
+}
+/* navBar css end */
+/* banner css start */
+#banner .bnr_main .bnr_details small{
+    font-family: "Rubik", sans-serif;
+    font-size: 16px;
+}
+#banner .bnr_main .bnr_details h1{
+    font-family: "Rubik", sans-serif;
+    font-size: 62px;
+    color: #fff;
+}
+#banner .bnr_main .bnr_details h1 span{
+    color: #FF014F;
+}
+#banner .bnr_main .bnr_details h2{
+    color: #fff;
+    font-family: "Rubik", sans-serif;
+    font-size: 52px;
+    margin-bottom: 20px;
+}
+#banner .bnr_main .bnr_links{
+    margin-top: 60px;
+}
+#banner .bnr_links ul {
+    display: flex;
+    position: relative;
+    padding: 0;
+}
+
+#banner .bnr_links ul li {
+    display: flex;
+    height: 45px;
+    width: 45px;
+    border: 0.5px solid #808080;
+    text-align: center;
+    margin: 20px 10px 0 0;
+    border-radius: 45px;
+    -webkit-border-radius: 45px;
+    -moz-border-radius: 45px;
+    -ms-border-radius: 45px;
+    -o-border-radius: 45px;
+    cursor: pointer;
+    position: relative;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.306);
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 50px 8px 0 rgba(20, 20, 20, 0.219), 0 65px 20px 0 rgba(5, 5, 5, 0.19);
+}
+
+#banner .bnr_links ul li::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 60px;
+    background: linear-gradient(45deg, var(--i), var(--j));
+    opacity: 0;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    -webkit-border-radius: 60px;
+    -moz-border-radius: 60px;
+    -ms-border-radius: 60px;
+    -o-border-radius: 60px;
+}
+
+#banner .bnr_links ul li::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    width: 100%;
+    height: 100%;
+    border-radius: 60px;
+    background: linear-gradient(45deg, var(--i), var(--j));
+    transition: 0.5s;
+    filter: blur(15px);
+    z-index: -1;
+    opacity: 0;
+    -webkit-filter: blur(15px);
+    -webkit-border-radius: 60px;
+    -moz-border-radius: 60px;
+    -ms-border-radius: 60px;
+    -o-border-radius: 60px;
+}
+
+#banner .bnr_links ul li:hover {
+    width: 180px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0);
+}
+
+#banner .bnr_links ul li:hover::before {
+    opacity: 1;
+}
+
+#banner .bnr_links ul li:hover::after {
+    opacity: 0.5;
+}
+
+#banner .bnr_links ul li i {
+    color: #777;
+    font-size: 1.75em;
+    transition: 0.5s;
+    transition-delay: 0.25s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+#banner .bnr_links ul li:hover i {
+    transform: scale(0);
+    color: #fff;
+    transition-delay: 0s;
+}
+
+#banner .bnr_links ul li span {
+    position: absolute;
+}
+
+#banner .bnr_links ul li a {
+    color: #fff;
+    font-size: 1.1em;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    transform: scale(0);
+    transition: 0.5s;
+    transition-delay: 0s;
+    opacity: 0;
+}
+
+#banner .bnr_links ul li:hover a {
+    transform: scale(1);
+    transition-delay: 0.25s;
+    opacity: 1;
+}
+/* banner css end */
+/* features css start */
+#features{
+    padding: 50px 0;
+}
+/* features css end */
